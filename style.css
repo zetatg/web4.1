@@ -1,0 +1,73 @@
+/* =============================================================
+   BASE STYLES  —  Mobile View  (no media query)
+   ============================================================= */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #336699;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+}
+
+nav {
+  padding: 0.5em 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #336699;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  clear: both;
+}
+
+/* --- Divs: stacked full-width on mobile --- */
+div {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 95%;
+}
+
+
+/* =============================================================
+   QUERY #1  —  Tablet View  (triggers at 772px)
+   ============================================================= */
+@media all and (min-width: 772px) {
+  div {
+    display: inline-block;  /* lets divs sit side-by-side */
+    width: 45vw;
+  }
+
+  img {
+    max-height: 30vh;
+    width: auto;
+  }
+}
+
+
+/* =============================================================
+   QUERY #2  —  Large Screen View  (triggers at 998px)
+   ============================================================= */
+@media all and (min-width: 998px) {
+  div {
+    width: 30vw;
+  }
+}
